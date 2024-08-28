@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicativo de Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="chat-container">
+    <header id="chat-header">
+        <h1>Atendimento ao Cliente</h1>
+    </header>
+    <div id="messages-container">
+        <div id="messages"></div>
+    </div>
+    <div id="input-container">
+        <input id="messageInput" type="text" placeholder="Digite sua mensagem..." autocomplete="off" />
+        <button id="sendButton">Enviar</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1.5.2/dist/sockjs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/stompjs@2.3.3/lib/stomp.min.js"></script>
+<script src="chat.js"></script>
+</body>
+</html>
